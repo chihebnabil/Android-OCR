@@ -47,7 +47,7 @@ public class PhotoCaptureExample extends Activity
         _button = ( Button ) findViewById( R.id.button );
         _button.setOnClickListener( new ButtonClickHandler() );
         
-        _path = Environment.getExternalStorageDirectory() + "/tesseract/make_machine_example.jpg";
+        _path = Environment.getExternalStorageDirectory() + "/tesseract/tessdata/make_machine_example.jpg";
     
       
     }    
@@ -56,6 +56,7 @@ public class PhotoCaptureExample extends Activity
     {
     	public void onClick( View view ){
     		Log.i("MakeMachine", "ButtonClickHandler.onClick()" );
+    		
     		startCameraActivity();
     	}
     }
